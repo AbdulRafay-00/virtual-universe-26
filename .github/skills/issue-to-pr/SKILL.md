@@ -15,6 +15,8 @@ Section 1.
    write access. Origin may still be the event repository. Use
    `GH_REPO=<verified-owner/repo>` for every GitHub CLI operation and push only to
    the explicitly verified fork remote, never implicitly to origin.
+   Record the verified fork and branch before continuing so later commands use
+   the same destination consistently.
    - If no fork destination is ready, stop before edits or resource creation.
      Offer to prepare it in this same checkout with approval, preserving origin,
      other remotes, and local work. Do not open or switch sessions.
