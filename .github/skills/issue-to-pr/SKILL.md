@@ -23,15 +23,20 @@ Section 1.
 2. Pick the issue. Use the number you were given, or list open issues and ask:
    `gh issue list --state open`
 3. Read the issue and the code it mentions: `gh issue view <n>`
-4. Create a branch: `git switch -c fix/issue-<n>`
-5. Make the smallest change that fixes the issue, and run the project's tests
+4. If the fix needs library or API documentation, use the Context7 connector
+   for a public documentation lookup. Send only the public documentation query,
+   cite the relevant source in the draft pull request, and report when Context7
+   or another required tool is unavailable instead of implying that a lookup
+   succeeded.
+5. Create a branch: `git switch -c fix/issue-<n>`
+6. Make the smallest change that fixes the issue, and run the project's tests
    if it has any.
-6. Show the changes and obtain approval before committing, pushing explicitly to
+7. Show the changes and obtain approval before committing, pushing explicitly to
    the verified fork remote, and opening
    a draft pull request that closes the issue. Preserve any learner skill edits
    and include them only with approval:
    `gh pr create --draft --title "Fix #<n>: <issue title>" --body "Closes #<n>"`
-7. Ask before commenting on the issue with what changed and how to test it.
+8. Ask before commenting on the issue with what changed and how to test it.
    Report the exact issue, PR, and branch. Leave this PR branch checked out so
    the learner can review it in the same session; do not switch branches.
 
