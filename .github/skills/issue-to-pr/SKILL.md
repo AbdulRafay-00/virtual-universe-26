@@ -5,8 +5,9 @@ description: Read an open issue, propose a fix, and open a draft pull request fo
 
 # Issue to PR
 
-Turn one open issue into a suggested fix that a person reviews. These are the
-same `gh` commands you ran by hand in Section 1.
+Turn one open issue into a suggested fix that a person reviews. The workflow
+below keeps fork targeting explicit while using the same `gh` commands from
+Section 1.
 
 1. Confirm the learner's fork target and push remote established in this
    session. Inspect `git remote -v`, verify the selected destination with
